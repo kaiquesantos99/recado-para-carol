@@ -1,25 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f0f8ff;
-    overflow: hidden;
     font-family: 'Arial', sans-serif;
 }
 
 .message-container {
-    position: relative;
-    z-index: 1;
     text-align: center;
     color: #ff69b4;
-    margin: 0 20px;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .message-container h1 {
     font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .message-container p {
@@ -30,12 +28,13 @@ body {
 }
 
 .hearts {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 0;
     bottom: 0;
+    left: 0;
+    pointer-events: none;
 }
 
 .heart {
